@@ -12,9 +12,6 @@ class frame;
 		parity=~parity;
 	endfunction:corrupt
 
-	function writep();
-  		$display("%b",parity);
-	endfunction:writep
 
 	function bit check_parity();
 	
@@ -167,7 +164,7 @@ class uart extends base_packet ;
 		end
 		else
 		begin
-		$display("it is imposibile to replace frame nuber 1 and number 8");
+		$display("it is impossible replace frame number 1 and number 8");
 		end
 
 	
